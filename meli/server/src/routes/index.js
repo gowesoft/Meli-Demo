@@ -1,10 +1,8 @@
 const { Router } = require('express');
 
-const searchRouter = require('./search');
-const productRouter = require('./products');
+const searchRouter = require('./items');
 const router = Router();
 
-router.use("/search", searchRouter);
-router.use('/products', productRouter);
+router.use("/items", searchRouter);
 
 module.exports = router;

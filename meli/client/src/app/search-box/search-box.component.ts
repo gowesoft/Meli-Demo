@@ -20,8 +20,10 @@ export class SearchBoxComponent implements OnInit {
     ngOnInit(): void {
     }
 
-    onSubmit() {
-        console.log(this.productService.getProducts(this.searchForm.value.searchTerm));
+    onSubmit(): void {
+        this.productService.getProducts(this.searchForm.value.searchTerm).subscribe(data => {
+            console.log(data);
+        });
     }
 
 }
