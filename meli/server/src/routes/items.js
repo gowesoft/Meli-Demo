@@ -31,7 +31,11 @@ server.get('/', (req, res) => {
                     },
                     picture: result.thumbnail.replace('http', 'https').replace("-I", "-O"),
                     condition: result.condition,
-                    free_shipping: result.shipping.free_shipping
+                    free_shipping: result.shipping.free_shipping,
+                    address: {
+                        city_name: result.address.city_name,
+                        state_name: result.address.state_name
+                    }
                 }
             )
         });

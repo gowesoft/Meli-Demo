@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
-
-import { ProductsService } from '../products/products.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-search-box',
@@ -15,15 +14,13 @@ export class SearchBoxComponent implements OnInit {
 
     constructor(
         private fb: FormBuilder,
-        private productService: ProductsService) { }
+        private router: Router) { }
 
     ngOnInit(): void {
     }
 
     onSubmit(): void {
-        this.productService.getProducts(this.searchForm.value.searchTerm).subscribe(data => {
-            console.log(data);
-        });
+        this.router.navigate([`/items/search/${this.searchForm.value.searchTerm}`]);        
     }
 
 }

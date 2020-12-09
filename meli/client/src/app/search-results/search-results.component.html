@@ -1,0 +1,21 @@
+<div class="container search-results">
+	<div class="card">
+		<div class="card-body" *ngFor="let item of items; let lastElem = last">
+            <div class="card flex-row flex-wrap border-0">
+                <div class="card-header border-0 bg-transparent" (click)="goToDetails(item.id)">
+                    <img class="image-thumb" src="{{ item.picture }}" alt="">
+                </div>
+                <div class="row card-block border-0">
+                    <div class="col-md-8">
+                        <h4 class="product-title">$ {{ item.price.amount | number }}<img class="image-truck" src="./assets/ic_shipping.png" alt=""></h4>
+                        <p class="product-description" (click)="goToDetails(item.id)">{{ item.title }}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="product-state text-right">{{ item.address.state_name }}</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="split-bar" *ngIf="!lastElem">
+        </div>
+	</div>
+</div>
