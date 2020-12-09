@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { ProductDetailsComponent } from './products/product-details/product-details.component'
+import { SearchResultsComponent } from './search-results/search-results.component';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: HomeComponent
+        component: SearchResultsComponent
     },
     {
-        path: 'details',
+        path: 'items/search/:query',
+        component: SearchResultsComponent
+    },
+    {
+        path: 'items/:id',
         component: ProductDetailsComponent
     }
 ];

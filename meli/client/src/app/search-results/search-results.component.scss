@@ -1,0 +1,55 @@
+.search-results {
+    padding: 40px 15px 0 15px;
+}
+
+.split-bar {
+    margin: 5px 30px;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.card-header {
+    width: 212px;
+    height: 212px;
+    padding: 16px;
+}
+
+.card-block {
+    width: 75%;
+    padding-top: 30px;
+}
+
+.product-title {
+    font-size: 24px;
+}
+
+.product-description {
+    font-size: 18px;
+    margin-top: 32px;
+}
+
+.product-state {
+    font-size: 12px;
+}
+
+.image-thumb {
+    height: 100%;
+    max-width: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-truck {
+    padding: 0px 0px 5px 10px;
+}
+
+.product-description:hover {
+    cursor: pointer;
+}
+
+.card-header:hover {
+    cursor: pointer;
+}
