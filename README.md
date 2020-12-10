@@ -9,6 +9,8 @@ Demo del buscador de  Mercado Libre
 - Abrir en otra consola la carpeta "meli/client" y ejecutar los siguientes comandos:
 > npm install
 
+> npm install -g @angular/cli
+
 > ng serve
 
 - Abrir en una nevegador la siguiente url [http://localhost:4200/](http://localhost:4200/)
