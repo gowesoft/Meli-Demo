@@ -7,7 +7,9 @@
                 </div>
                 <div class="row card-block border-0">
                     <div class="col-md-8">
-                        <h4 class="product-title">$ {{ item.price.amount | number }}<img class="image-truck" src="./assets/ic_shipping.png" alt=""></h4>
+                        <h4 class="product-price">$ {{ formatNumber(item.price.amount) }}
+                            <img class="image-truck" src="./assets/ic_shipping.png" alt="">
+                        </h4>
                         <p class="product-description" (click)="goToDetails(item.id)">{{ item.title }}</p>
                     </div>
                     <div class="col-md-4">
@@ -19,3 +21,4 @@
         </div>
 	</div>
 </div>
+<div class="bottom-space"></div>

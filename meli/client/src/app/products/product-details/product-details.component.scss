@@ -1,0 +1,72 @@
+@import "../../../variables.scss";
+
+.product-details {
+    padding: 40px 15px 0 15px;
+}
+
+.product-image {
+    width: 100%;
+    max-height: $descr-image-size;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 0;
+    margin-top: $secondary-separation;
+}
+
+.image-container {
+    max-width: $descr-image-size;
+    max-height: $descr-image-size;
+    overflow: hidden;
+}
+
+.product-title {
+    margin-top: $primary-separation;
+    padding: 0;
+    font-size: $font-size-title;
+    font-weight: bold;
+    color: $input-text-color;
+}
+
+.product-condition {
+    font-size: $font-size-condition;
+    color: $description-text-color;
+    font-weight: 600;
+}
+
+.product-price {
+    margin-top: $secondary-separation;
+    font-size: $font-size-price;
+    color: $input-text-color
+}
+
+.button-container {
+    margin-right: $secondary-separation;
+}
+
+button {
+    margin-top: $secondary-separation;
+    margin-right: $secondary-separation;
+    background-color: $button-color;
+    border-color: $button-color;
+}
+
+.description-row {
+    margin-top: ($secondary-separation * 3);
+    margin-left: $secondary-separation;
+    color: $description-text-color;
+}
+
+.product-description-title {
+    font-size: $font-size-descr-title;
+}
+
+.product-description {
+    font-size: $font-size-description;
+    margin-bottom: $secondary-separation;
+}
+
+.bottom-space {
+    height: 20px;
+}

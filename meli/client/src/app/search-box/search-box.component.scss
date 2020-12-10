@@ -1,15 +1,17 @@
+@import "../../variables.scss";
+
 .header {
     padding: 15px 0 15px 0;
-    background-color: #FFE600;
+    background-color: $header-color;
 }
 
 .search-text {
-    font-size: 18px !important;
-    color: #333333;
+    font-size: $search-box-size-text;
+    color: $input-text-color;
 }
 
 ::placeholder {
-    color: #999999;
+    color: $placeholder-color;
 }
 
 .padding-left-from-image {

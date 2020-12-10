@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
     templateUrl: './search-box.component.html',
     styleUrls: ['./search-box.component.scss']
 })
-export class SearchBoxComponent implements OnInit {
+export class SearchBoxComponent {
     searchForm: FormGroup = new FormGroup({
         searchTerm: new FormControl('')
     });
@@ -16,11 +16,7 @@ export class SearchBoxComponent implements OnInit {
         private fb: FormBuilder,
         private router: Router) { }
 
-    ngOnInit(): void {
-    }
-
     onSubmit(): void {
         this.router.navigate([`/items/search/${this.searchForm.value.searchTerm}`]);        
     }
-
 }
