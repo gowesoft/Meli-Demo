@@ -13,4 +13,4 @@ Demo del buscador de  Mercado Libre
 
 > ng serve
 
-- Abrir en una nevegador la siguiente url [http://localhost:4200/](http://localhost:4200/)
+- Abrir en un navegador la siguiente url [http://localhost:4200/](http://localhost:4200/)
