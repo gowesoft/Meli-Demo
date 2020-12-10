@@ -5,6 +5,10 @@
     background-color: $header-color;
 }
 
+.logo-image {
+    cursor: pointer;
+}
+
 .search-text {
     font-size: $search-box-size-text;
     color: $input-text-color;

@@ -16,6 +16,10 @@ export class SearchBoxComponent {
         private fb: FormBuilder,
         private router: Router) { }
 
+    goToHome(): void {
+        this.router.navigate(['/']);
+    }
+
     onSubmit(): void {
         this.router.navigate([`/items/search/${this.searchForm.value.searchTerm}`]);        
     }
