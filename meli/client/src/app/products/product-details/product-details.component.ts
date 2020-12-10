@@ -11,7 +11,7 @@ import { Item } from '../products.model';
 })
 export class ProductDetailsComponent implements OnInit {
     id: string = '';
-    item: Item | undefined;
+    item!: Item;
     author = {};
 
     constructor(
@@ -19,6 +19,20 @@ export class ProductDetailsComponent implements OnInit {
         private productService: ProductsService,
         private router: Router
     ) { }
+
+    getState(condition: string): any {
+        if (condition === 'new') {
+            return 'Nuevo';
+        }
+        return 'Usado';
+    }
+
+    getSoldQuantityText(soldQuantity: number): any {
+        if (soldQuantity === 1) {
+            return `${soldQuantity} vendido`;
+        }
+        return `${soldQuantity} vendidos`;
+    }
 
     ngOnInit(): void {
         if (this._Activatedroute.snapshot.paramMap.has("id")) {

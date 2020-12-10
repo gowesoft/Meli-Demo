@@ -1,7 +1,10 @@
+@import "../variables.scss";
+
 body {
-    background-color: #EEEEEE;
+    background-color: $backgroud-color;
+    font-family: $font-family;
 }
 
 .container {
-    max-width: 1626px;
+    max-width: $main-container-width;
 }

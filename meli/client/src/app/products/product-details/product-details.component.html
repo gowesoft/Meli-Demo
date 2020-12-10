@@ -1,1 +1,26 @@
-{{ item | json}}
+<div class="container product-details">
+	<div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-7 offset-md-1 image-container">
+                    <img class="product-image" src="{{ item.picture }}" alt="">
+                </div>
+                <div class="col-md-3">
+                    <p class="product-condition">{{ getState(item.condition) }} - {{ getSoldQuantityText(item.sold_quantity) }}</p>
+                    <p class="product-title">{{ item.title }}</p>
+                    <p class="product-price">$ {{ item.price.amount | number }}</p>
+                    <div class="button-container">
+                        <button class="btn btn-primary btn-block">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row description-row">
+                <div class="col-md-7 offset-md-1">
+                    <p class="product-description-title">Descripción del producto</p>
+                    <p class="product-description">{{ item.description }}</p>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+<div class="bottom-space"></div>

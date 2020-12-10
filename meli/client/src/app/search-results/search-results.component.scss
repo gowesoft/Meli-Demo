@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .search-results {
     padding: 40px 15px 0 15px;
 }
@@ -44,6 +46,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 4px;
 }
 
 .image-truck {

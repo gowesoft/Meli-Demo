@@ -65,7 +65,7 @@ server.get('/:id', (req, res) => {
                             amount: response.data.price,
                             decimals: ''
                         },
-                        picture: response.data.secure_thumbnail,
+                        picture: response.data.pictures[0].secure_url,
                         condition: response.data.condition,
                         free_shipping: response.data.shipping.free_shipping,
                         sold_quantity: response.data.sold_quantity,
