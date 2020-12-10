@@ -5,12 +5,9 @@
 }
 
 .product-image {
-    height: 100%;
-    max-width: $descr-image-size;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 4px;
+    width: 100%;
+    max-height: $descr-image-size;
+    object-fit: contain;
 }
 
 .card-body {
@@ -19,8 +16,9 @@
 }
 
 .image-container {
-    width: $descr-image-size;
-    height: $descr-image-size;
+    max-width: $descr-image-size;
+    max-height: $descr-image-size;
+    overflow: hidden;
 }
 
 .product-title {

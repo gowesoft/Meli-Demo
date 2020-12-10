@@ -1,3 +1,4 @@
+// general
 $header-color: #FFE600;
 $input-text-color: #333333;
 $description-text-color: #666666;
@@ -9,12 +10,26 @@ $primary-separation: 16px;
 $secondary-separation: 32px;
 
 $font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+$main-container-width: 1626px;
+
+// product details
 $font-size-title: 24px;
 $font-size-descr-title: 28px;
 $font-size-description: 16px;
 $font-size-condition: 14px;
 $font-size-price: 46px;
-
-$main-container-width: 1626px;
-
 $descr-image-size: 680px;
+
+//search products
+$thumb-size: 180px;
+$thumb-border-radius: 4px;
+$card-thumb-size: ($thumb-size + ($primary-separation * 2));
+$thumb-border-radius: 4px;
+
+$search-font-size-price: 24px;
+$search-font-size-descr: 18px;
+$search-font-size-state: 12px;
+
+//search box
+$search-box-size-text: 18px;
+

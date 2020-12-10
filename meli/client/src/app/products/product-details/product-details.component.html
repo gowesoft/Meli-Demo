@@ -2,13 +2,15 @@
 	<div class="card">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-7 offset-md-1 image-container">
-                    <img class="product-image" src="{{ item.picture }}" alt="">
+                <div class="col-md-7 offset-md-1">
+                    <div class="image-container">
+                        <img class="product-image" src="{{ item.picture }}" alt="">
+                    </div>
                 </div>
                 <div class="col-md-3">
                     <p class="product-condition">{{ getState(item.condition) }} - {{ getSoldQuantityText(item.sold_quantity) }}</p>
                     <p class="product-title">{{ item.title }}</p>
-                    <p class="product-price">$ {{ item.price.amount | number }}</p>
+                    <p class="product-price">$ {{ formatNumber(item.price.amount) }}</p>
                     <div class="button-container">
                         <button class="btn btn-primary btn-block">Comprar</button>
                     </div>
